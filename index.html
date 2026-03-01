@@ -3,121 +3,216 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MB VUČNA SLUŽBA | Zagreb</title>
+<meta name="description" content="MB Vučna služba Zagreb - Ivanja Reka. Pomoć na cesti 0-24 sata. Vuča vozila Zagreb, Sesvete, Dubrava, Rugvica, A3 i A4.">
+<title>MB VUČNA SLUŽBA | Zagreb 0-24</title>
+
 <style>
-body {
+* {
 margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
 font-family: Arial, sans-serif;
 background-color: #111;
 color: white;
+line-height: 1.6;
 }
 
+a {
+text-decoration: none;
+}
+
+/* HEADER */
+.header {
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+z-index: 1000;
+}
+
+.header img {
+height: 65px;
+}
+
+.header .phone {
+font-size: 18px;
+font-weight: bold;
+color: #ffcc00;
+}
+
+/* HERO */
 .hero {
 background: url('kamion.jpg.jpeg') center/cover no-repeat;
-height: 90vh;
+height: 100vh;
 display: flex;
-flex-direction: column;
-justify-content: center;
 align-items: center;
+justify-content: center;
 text-align: center;
-background-color: rgba(0,0,0,0.65);
+background-color: rgba(0,0,0,0.7);
 background-blend-mode: overlay;
 padding: 20px;
 }
 
-.hero img {
-width: 250px;
+.hero-content h1 {
+font-size: 48px;
+color: #ffcc00;
+margin-bottom: 15px;
+}
+
+.hero-content p {
+font-size: 20px;
 margin-bottom: 20px;
 }
 
-.hero h1 {
-font-size: 40px;
-color: #ffcc00;
-margin: 10px 0;
-}
-
-.phone {
-font-size: 28px;
-font-weight: bold;
-margin: 15px 0;
-}
-
 .button {
-padding: 15px 30px;
+display: inline-block;
+padding: 15px 35px;
 background: #ffcc00;
 color: black;
-text-decoration: none;
 font-weight: bold;
 border-radius: 5px;
+transition: 0.3s;
 }
 
+.button:hover {
+background: #ffaa00;
+}
+
+/* SECTION */
 .section {
-padding: 60px 20px;
-max-width: 1000px;
+padding: 80px 20px;
+max-width: 1100px;
 margin: auto;
 }
 
-h2 {
+.section h2 {
+text-align: center;
 color: #ffcc00;
+margin-bottom: 40px;
+font-size: 32px;
 }
 
-footer {
+.services {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+}
+
+.service-box {
+background: #1a1a1a;
+padding: 30px;
+border-left: 5px solid #ffcc00;
+}
+
+.service-box h3 {
+margin-bottom: 10px;
+}
+
+.footer {
 background: black;
-padding: 30px 20px;
+padding: 40px 20px;
 text-align: center;
 font-size: 14px;
 }
+
+.footer strong {
+color: #ffcc00;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.header {
+padding: 15px 20px;
+}
+
+.hero-content h1 {
+font-size: 32px;
+}
+
+.hero-content p {
+font-size: 18px;
+}
+}
 </style>
 </head>
+
 <body>
 
-<div class="hero">
+<!-- HEADER -->
+<div class="header">
 <img src="logo.png.webp" alt="MB Vučna služba logo">
-<h1>VUČNA SLUŽBA ZAGREB – IVANJA REKA</h1>
 <div class="phone">📞 +385 91 640 4982</div>
-<a href="tel:+385916404982" class="button">Nazovi odmah</a>
 </div>
 
+<!-- HERO -->
+<div class="hero">
+<div class="hero-content">
+<h1>VUČNA SLUŽBA ZAGREB – 0-24 SATA</h1>
+<p>Brza i pouzdana pomoć na cesti u svakom trenutku</p>
+<a href="tel:+385916404982" class="button">Nazovi odmah</a>
+</div>
+</div>
+
+<!-- O NAMA -->
 <div class="section">
 <h2>O nama</h2>
 <p>
-MB VUČNA SLUŽBA sa sjedištem u Ivanjoj Reci pruža brzu i pouzdanu pomoć na cesti 0–24 sata dnevno.
-Specijalizirani smo za šlepanje osobnih i lakih teretnih vozila na području Zagreba,
-Sesveta, Dubrave, Rugvice te autocesta A3 i A4.
+MB VUČNA SLUŽBA sa sjedištem u Ivanjoj Reci pruža profesionalnu pomoć na cesti 0–24 sata dnevno, 365 dana u godini.
+Specijalizirani smo za vuču i prijevoz osobnih i lakih teretnih vozila na području Zagreba, Sesveta, Dubrave,
+Rugvice te autocesta A3 i A4.
 <br><br>
-Naš prioritet je brz dolazak na lokaciju, siguran prijevoz vozila te profesionalan
-i korektan odnos prema svakom klijentu. Dostupni smo 365 dana u godini
-kako bismo vam pružili pomoć kada vam je najpotrebnija.
+Naš prioritet je brz dolazak na lokaciju, siguran transport vozila i korektan odnos prema svakom klijentu.
+Uz modernu opremu i stalnu dostupnost, jamčimo pouzdanu uslugu kada vam je najpotrebnija.
 </p>
 </div>
 
+<!-- USLUGE -->
 <div class="section">
-<h2>Usluge</h2>
-<p>
-• Vuča osobnih vozila<br>
-• Vuča lakih teretnih vozila<br>
-• Pomoć na cesti<br>
-• Prijevoz vozila po dogovoru<br>
-• Hitne intervencije 0–24
-</p>
+<h2>Naše usluge</h2>
+<div class="services">
+<div class="service-box">
+<h3>Vuča osobnih vozila</h3>
+<p>Siguran prijevoz vozila do željene lokacije.</p>
+</div>
+<div class="service-box">
+<h3>Vuča lakih teretnih vozila</h3>
+<p>Prijevoz kombija i manjih teretnih vozila.</p>
+</div>
+<div class="service-box">
+<h3>Pomoć na cesti</h3>
+<p>Hitne intervencije i asistencija 0–24 sata.</p>
+</div>
+<div class="service-box">
+<h3>Prijevoz po dogovoru</h3>
+<p>Prijevoz vozila unutar Hrvatske po dogovoru.</p>
+</div>
+</div>
 </div>
 
+<!-- PODRUČJE -->
 <div class="section">
 <h2>Područje rada</h2>
-<p>
-Zagreb, Ivanja Reka, Sesvete, Dubrava, Rugvica,
-autoceste A3 i A4 te šira okolica.
+<p style="text-align:center;">
+Zagreb – Ivanja Reka – Sesvete – Dubrava – Rugvica – Autoceste A3 i A4
 </p>
 </div>
 
-<footer>
-MB VUČNA SLUŽBA<br>
+<!-- FOOTER -->
+<div class="footer">
+<strong>MB VUČNA SLUŽBA</strong><br>
 Vlasnik: Matej Begić<br>
 Sjedište: Antuna Vugrina 5, Ivanja Reka, Zagreb<br>
 Telefon: +385 91 640 4982<br>
 Email: mbvucnasluzba@gmail.com<br><br>
 Za sve upite i ponude za suradnju kontaktirajte nas putem emaila.
-</footer>
+</div>
 
 </body>
 </html>
