@@ -3,208 +3,201 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MB Vučna služba Zagreb - Ivanja Reka. Pomoć na cesti 0-24 sata. Vuča vozila Zagreb, Sesvete, Dubrava, Rugvica, A3 i A4.">
+<meta name="description" content="MB Vučna služba Zagreb - brza intervencija 0-24 sata. Profesionalna pomoć na cesti i siguran prijevoz vozila.">
 <title>MB VUČNA SLUŽBA | Zagreb 0-24</title>
 
 <style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Arial, sans-serif;
+background:#111;
+color:white;
+line-height:1.7;
 }
 
-body {
-font-family: Arial, sans-serif;
-background-color: #111;
-color: white;
-line-height: 1.6;
+.header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.9);
+z-index:1000;
 }
 
-a {
-text-decoration: none;
+.header img{height:60px;}
+.phone-top{
+color:#ffcc00;
+font-weight:bold;
+font-size:18px;
 }
 
-/* HEADER */
-.header {
-position: absolute;
-width: 100%;
-top: 0;
-left: 0;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 50px;
-z-index: 1000;
+.hero{
+background:url('kamion.jpg') center/cover no-repeat;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background-color:rgba(0,0,0,0.75);
+background-blend-mode:overlay;
+padding:20px;
 }
 
-.header img {
-height: 65px;
+.hero h1{
+font-size:48px;
+color:#ffcc00;
+margin-bottom:15px;
 }
 
-.header .phone {
-font-size: 18px;
-font-weight: bold;
-color: #ffcc00;
+.hero p{
+font-size:22px;
+margin-bottom:25px;
 }
 
-/* HERO */
-.hero {
-background: url('kamion.jpg.jpeg') center/cover no-repeat;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-background-color: rgba(0,0,0,0.7);
-background-blend-mode: overlay;
-padding: 20px;
+.button{
+display:inline-block;
+padding:15px 40px;
+background:#ffcc00;
+color:black;
+font-weight:bold;
+border-radius:5px;
+font-size:18px;
+transition:0.3s;
 }
 
-.hero-content h1 {
-font-size: 48px;
-color: #ffcc00;
-margin-bottom: 15px;
+.button:hover{
+background:#ffaa00;
 }
 
-.hero-content p {
-font-size: 20px;
-margin-bottom: 20px;
+.section{
+padding:90px 20px;
+max-width:1100px;
+margin:auto;
 }
 
-.button {
-display: inline-block;
-padding: 15px 35px;
-background: #ffcc00;
-color: black;
-font-weight: bold;
-border-radius: 5px;
-transition: 0.3s;
+.section h2{
+text-align:center;
+color:#ffcc00;
+margin-bottom:50px;
+font-size:32px;
 }
 
-.button:hover {
-background: #ffaa00;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
 
-/* SECTION */
-.section {
-padding: 80px 20px;
-max-width: 1100px;
-margin: auto;
+.box{
+background:#1a1a1a;
+padding:30px;
+border-left:5px solid #ffcc00;
 }
 
-.section h2 {
-text-align: center;
-color: #ffcc00;
-margin-bottom: 40px;
-font-size: 32px;
+.highlight{
+background:#ffcc00;
+color:black;
+text-align:center;
+padding:40px 20px;
+font-size:22px;
+font-weight:bold;
 }
 
-.services {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 30px;
+.map-container{
+margin-top:40px;
+display:flex;
+justify-content:center;
 }
 
-.service-box {
-background: #1a1a1a;
-padding: 30px;
-border-left: 5px solid #ffcc00;
+.map-container iframe{
+width:100%;
+max-width:900px;
+height:450px;
+border:4px solid #ffcc00;
 }
 
-.service-box h3 {
-margin-bottom: 10px;
+.footer{
+background:black;
+padding:50px 20px;
+text-align:center;
+font-size:14px;
 }
 
-.footer {
-background: black;
-padding: 40px 20px;
-text-align: center;
-font-size: 14px;
-}
+.footer strong{color:#ffcc00;}
 
-.footer strong {
-color: #ffcc00;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-.header {
-padding: 15px 20px;
-}
-
-.hero-content h1 {
-font-size: 32px;
-}
-
-.hero-content p {
-font-size: 18px;
-}
+@media(max-width:768px){
+.hero h1{font-size:32px;}
+.hero p{font-size:18px;}
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <div class="header">
-<img src="logo.png.webp" alt="MB Vučna služba logo">
-<div class="phone">📞 +385 91 640 4982</div>
+<img src="logo.png" alt="MB Vučna služba logo">
+<div class="phone-top">📞 +385 91 640 4982 (0-24)</div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
-<div class="hero-content">
-<h1>VUČNA SLUŽBA ZAGREB – 0-24 SATA</h1>
-<p>Brza i pouzdana pomoć na cesti u svakom trenutku</p>
-<a href="tel:+385916404982" class="button">Nazovi odmah</a>
+<div>
+<h1>HITNA VUČNA SLUŽBA ZAGREB</h1>
+<p>Brza intervencija 0-24 sata – Dolazak u najkraćem roku</p>
+<a href="tel:+385916404982" class="button">NAZOVI ODMAH</a>
 </div>
 </div>
 
-<!-- O NAMA -->
+<div class="highlight">
+Dostupni 24 sata dnevno – 365 dana u godini – Bez skrivenih troškova
+</div>
+
+<div class="section">
+<h2>Zašto odabrati MB Vučnu službu?</h2>
+<div class="grid">
+<div class="box">
+<h3>Brz dolazak</h3>
+<p>Na teren izlazimo odmah po pozivu. Prioritet nam je stići do vas što je brže moguće.</p>
+</div>
+<div class="box">
+<h3>Profesionalna oprema</h3>
+<p>Koristimo modernu opremu za siguran utovar i transport svih tipova osobnih i lakih teretnih vozila.</p>
+</div>
+<div class="box">
+<h3>Dostupnost 0-24</h3>
+<p>Radimo svaki dan, uključujući vikende i praznike. Pomoć kada vam je najpotrebnija.</p>
+</div>
+<div class="box">
+<h3>Korektne cijene</h3>
+<p>Transparentno poslovanje bez skrivenih troškova. Jasno definirane usluge i pošten odnos.</p>
+</div>
+</div>
+</div>
+
 <div class="section">
 <h2>O nama</h2>
-<p>
-MB VUČNA SLUŽBA sa sjedištem u Ivanjoj Reci pruža profesionalnu pomoć na cesti 0–24 sata dnevno, 365 dana u godini.
-Specijalizirani smo za vuču i prijevoz osobnih i lakih teretnih vozila na području Zagreba, Sesveta, Dubrave,
-Rugvice te autocesta A3 i A4.
-<br><br>
-Naš prioritet je brz dolazak na lokaciju, siguran transport vozila i korektan odnos prema svakom klijentu.
-Uz modernu opremu i stalnu dostupnost, jamčimo pouzdanu uslugu kada vam je najpotrebnija.
-</p>
-</div>
+<div class="box">
+MB VUČNA SLUŽBA sa sjedištem u Zagrebu (Ivanja Reka) specijalizirana je za pomoć na cesti i prijevoz vozila na području Zagreba i šire okolice. Naš cilj je pružiti sigurnost i pouzdanost vozačima u trenucima kada se nađu u nepredviđenoj situaciji – kvar, prometna nezgoda ili zastoj vozila.
 
-<!-- USLUGE -->
-<div class="section">
-<h2>Naše usluge</h2>
-<div class="services">
-<div class="service-box">
-<h3>Vuča osobnih vozila</h3>
-<p>Siguran prijevoz vozila do željene lokacije.</p>
-</div>
-<div class="service-box">
-<h3>Vuča lakih teretnih vozila</h3>
-<p>Prijevoz kombija i manjih teretnih vozila.</p>
-</div>
-<div class="service-box">
-<h3>Pomoć na cesti</h3>
-<p>Hitne intervencije i asistencija 0–24 sata.</p>
-</div>
-<div class="service-box">
-<h3>Prijevoz po dogovoru</h3>
-<p>Prijevoz vozila unutar Hrvatske po dogovoru.</p>
-</div>
+Svakoj intervenciji pristupamo odgovorno i profesionalno, uz maksimalnu brigu o vozilu i klijentu. Dugoročno povjerenje gradimo brzinom, dostupnošću i kvalitetom usluge.
 </div>
 </div>
 
-<!-- PODRUČJE -->
 <div class="section">
-<h2>Područje rada</h2>
+<h2>Područje djelovanja</h2>
 <p style="text-align:center;">
-Zagreb – Ivanja Reka – Sesvete – Dubrava – Rugvica – Autoceste A3 i A4
+Zagreb i šira okolica – intervencije na gradskim prometnicama, obilaznici i autocestama u okolici Zagreba.
 </p>
+
+<div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.498044982179!2d16.116810275418423!3d45.80128307108149!2m3!1f0!2f0!3f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x498ae1f6a19491d9%3A0x1c59f2cee5fb33be!2zTUIgVlXEjE5BIFNMVcW9QkE!5e0!3m2!1shr!2shr!4v1772651850759!5m2!1shr!2shr" allowfullscreen="" loading="lazy"></iframe>
+</div>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
 <strong>MB VUČNA SLUŽBA</strong><br>
 Vlasnik: Matej Begić<br>
